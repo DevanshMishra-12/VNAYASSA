@@ -27,7 +27,15 @@
             --cool: #b73535f1;        /* Rich brown - dark text */
             --transition: all 0.4s ease;
         }
-
+        @media (max-width: 768px) {
+    .hero, .about, .gallery {
+        position: relative; /* Reset if needed */
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+    }
+}
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--light);
