@@ -28,14 +28,25 @@
             --transition: all 0.4s ease;
         }
         @media (max-width: 768px) {
+    body, html {
+        width: 100%;
+        overflow-x: hidden;
+    }
     .hero, .about, .gallery {
-        position: relative; /* Reset if needed */
-        left: auto;
-        right: auto;
-        top: auto;
-        bottom: auto;
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    img, video, iframe {
+        max-width: 100%;
+        height: auto;
+    }
+    button, a {
+        min-height: 48px;
+        min-width: 48px;
     }
 }
+     
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--light);
