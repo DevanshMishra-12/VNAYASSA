@@ -408,7 +408,7 @@
             background: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%);
             padding: 80px 5%;
             margin-top: 70px;
-            border-radius: 10px;
+            border-radius: auto;
             color: white;
         }
 
@@ -421,7 +421,7 @@
 
         .vision-list {
             display: flex;
-            grid-template-columns: repeat(auto-fit, minmax(..., 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             max-width: 1200px;
             margin: 0 auto;
@@ -656,7 +656,7 @@
         }
 
         .team-grid {
-            display: grid;
+            display: flex;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 30px;
             max-width: 1200px;
