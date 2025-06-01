@@ -405,92 +405,74 @@
             font-size: 1rem;
         }
 
-        .vision-container {
-            background: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%);
-            padding: 80px 5%;
-            margin-top: 70px;
-            border-radius: auto;
-            color: white;
-        }
+       .vision {
+  background: linear-gradient(to bottom, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  padding: 80px 0;
+}
 
-        .vision-container h2 {
-            display: flex;
-            justify-content: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-         .vision-step {
-            flex: 1;
-            min-width: 250px;
-            text-align: center;
-            padding: 40px 30px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            position: relative;
-            transition: var(--transition);
-        }
+.vision .section-title h2 {
+  color: white;
+}
 
-        .vision-step:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-10px);
-        }
+.vision .section-title h2::after {
+  background: var(--gold);
+}
 
-        .step-number {
-            position: absolute;
-            top: -25px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 50px;
-            height: 50px;
-            background: var(--gold);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--dark);
-        }
+.vision-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
 
-        .vision-step h3 {
-            font-size: 1.6rem;
-            margin-bottom: 20px;
-            color: white;
-        }
+.vision-step {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  position: relative;
+  transition: var(--transition);
+}
 
-        .vision-step p {
-            color: rgba(255, 255, 255, 0.9);
-            line-height: 1.7;
-        }
+.vision-step:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-10px);
+}
 
+.vision-step .step-number {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark);
+}
 
-        .vision-list {
-            display: flex;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+.vision-step h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: white;
+}
 
-        .vision-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-        }
+.vision-step p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+}
 
-        .vision-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--gold);
-            min-width: 40px;
-        }
-
-        .vision-text {
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
 
         /* Services Section */
         .services {
